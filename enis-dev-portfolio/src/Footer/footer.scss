@@ -1,0 +1,71 @@
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: white;
+  
+    .footer-text {
+      margin-bottom: 20px;  // Increased margin for better spacing
+  
+      .footer-var-dump {
+        font-size: 55px;
+        color: #8555ed;
+        font-weight: normal;
+  
+        span {
+          color: black;
+          font-weight: 1000;
+        }
+      }
+    }
+  
+    .footer-info {
+      font-size: 25px;
+      color: #9b9b9b;
+      margin-bottom: 20px;
+      padding: 10px 0 5px 0;
+    }
+  
+    .linkedin-logo {
+      width: 50px;
+      height: auto;
+    }
+  
+    a {
+      display: inline-block;
+    }
+  
+    // Responsive styles for smaller devices
+    @media screen and (max-width: 768px) {
+      .footer-text {
+        .footer-var-dump {
+          font-size: 45px;  // Reducing size on smaller screens
+        }
+      }
+  
+      .footer-info {
+        font-size: 20px;  // Adjust font size for better readability on mobile
+      }
+  
+      .linkedin-logo {
+        width: 40px;  // Smaller LinkedIn logo on mobile
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      .footer-text {
+        .footer-var-dump {
+          font-size: 35px;  // Further reduce font size on smaller screens
+        }
+      }
+  
+      .footer-info {
+        font-size: 18px;  // Smaller font size for mobile
+      }
+  
+      .linkedin-logo {
+        width: 35px;  // Even smaller LinkedIn logo on smaller devices
+      }
+    }
+  }
+  

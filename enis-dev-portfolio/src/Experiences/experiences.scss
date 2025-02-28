@@ -1,0 +1,142 @@
+.experience {
+    text-align: center;
+    padding: 80px 250px;  // Reduced padding for smaller screens
+    background-color: #fff;
+    color: #fff;
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 20px;
+    }
+  
+    .experience-title {
+      font-size: 55px;
+      color: black;
+      margin-bottom: 20px;
+      .property { 
+        color: #672ae9;
+      }
+      .property::after { 
+        content:"{";
+      }
+    }
+  
+    .experience-description {
+      font-size: 25px;
+      color: #9b9b9b;
+      margin-bottom: 40px;
+      width: 100%;
+      span { 
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 1000;
+      }
+    }
+  
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .experience-row {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .experience-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      flex-wrap: wrap;
+  
+      .company-logo img {
+        width: 100px;
+        height: auto;
+      }
+  
+      .company-name h1 {
+        font-size: 25px;
+        color: #9b9b9b;
+      }
+  
+      .job-dates p {
+        font-size: 25px;
+        color: #9b9b9b;
+      }
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    // Responsive styles
+    @media screen and (max-width: 768px) {
+      .experience-title {
+        font-size: 45px;
+      }
+  
+      .experience-description {
+        font-size: 20px;
+      }
+  
+      .experience-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+      }
+  
+      .company-name h1 {
+        font-size: 22px;
+      }
+  
+      .job-dates p {
+        font-size: 22px;
+      }
+  
+      .company-logo img {
+        width: 80px; // Slightly smaller logos
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      .experience-title {
+        font-size: 35px;
+      }
+  
+      .experience-description {
+        font-size: 18px;
+      }
+  
+      .experience-item {
+        padding: 15px 10px;
+      }
+  
+      .company-name h1 {
+        font-size: 20px;
+      }
+  
+      .job-dates p {
+        font-size: 20px;
+      }
+  
+      .company-logo img {
+        width: 60px; // Smaller logos for mobile
+      }
+    }
+  }
+  

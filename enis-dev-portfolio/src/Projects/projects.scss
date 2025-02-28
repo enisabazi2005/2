@@ -1,0 +1,128 @@
+.projects {
+    text-align: center;
+    padding: 80px 200px;  // Reduced padding for smaller screens
+    background-color: #fff;
+    color: #fff;
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 100px;
+    }
+  
+    .projects-title {
+      font-size: 55px;
+      color: black;
+      margin-bottom: 20px;
+      padding: 30px 0;
+      span { 
+        color: #672ae9;
+      }
+    }
+  
+    .projects-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 40px;
+      border: 1px solid #8555ed35;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px #8555ed1c;
+      width: 100%;
+      flex-wrap: wrap;  // Added for better wrapping behavior on smaller screens
+  
+      .projects-image { 
+        flex-basis: 50%;
+        max-width: 450px;  // Limiting the size for better responsiveness
+      }
+      .projects-info { 
+        flex-basis: 50%;
+        text-align: left;
+        max-width: 600px;
+      }
+    }
+  
+    .projects-image img {
+      width: 100%;  // Make image responsive
+      height: auto;
+      max-width: 450px;  // Ensures image doesn't grow too large
+      border-radius: 50px;
+      filter: hue-rotate(45deg);
+      position: relative;
+      right: 5px;
+    }
+  
+    .projects-info {
+      text-align: left;
+      max-width: 600px;
+  
+      h1 {
+        font-size: 32px;
+        font-weight: 1000;
+        color: black;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 20px;
+        color: #9b9b9b;
+        text-align: start;
+      }
+    }
+  
+    // Responsive styles
+    @media screen and (max-width: 768px) {
+      .projects-title {
+        font-size: 45px;
+      }
+  
+      .projects-row {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+  
+      .projects-image {
+        max-width: 100%;
+      }
+  
+      .projects-info {
+        text-align: center;
+      }
+  
+      .projects-image img {
+        max-width: 80%;  // Reduce size for mobile
+        margin: 0 auto;
+      }
+  
+      .projects-info h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+  
+      .projects-info p {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      .projects-title {
+        font-size: 35px;
+      }
+  
+      .projects-info h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+  
+      .projects-info p {
+        font-size: 16px;
+        text-align: center;
+      }
+  
+      .projects-image img {
+        max-width: 90%;  // Further reduce image size
+      }
+    }
+  }
+  
