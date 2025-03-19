@@ -41,7 +41,7 @@ const Experience = () => {
               <h1>Starlabs LLC</h1>
             </div>
             <div className="job-dates">
-              <p>2024 - Present</p>
+              <p>2024 - </p>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ const Experience = () => {
               <h1>Innovation Academy</h1>
             </div>
             <div className="job-dates">
-              <p>2021 - 2024</p>
+              <p>2021 - 2023</p>
             </div>
           </div>
         </div>
