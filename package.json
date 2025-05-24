@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "buildCommand": "npx vite build",
+  "build": "npx vite build",
     "outputDirectory": "dist",
     "lint": "eslint .",
     "preview": "vite preview",
