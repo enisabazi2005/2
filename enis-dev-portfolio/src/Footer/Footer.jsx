@@ -20,11 +20,13 @@ const Footer = () => {
       <p className="footer-info">
       You can stalk me there.
       </p>
-
       {/* LinkedIn link and logo */}
       <a href="https://www.linkedin.com/in/enis-abazi-9a7097241/" target="_blank" rel="noopener noreferrer">
         <img src={linkedinLogo} alt="LinkedIn" className="linkedin-logo" />
       </a>
+    <strong className="strong">
+      die;
+    </strong>
     </footer>
   );
 };

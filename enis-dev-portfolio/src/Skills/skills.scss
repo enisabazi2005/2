@@ -65,6 +65,13 @@
       .skills-grid {
         grid-template-columns: repeat(2, 1fr);  // Two columns for tablets
       }
+      .skill-box {
+        display: block !important;
+        img{
+          width: 50%;
+          height: 50%;
+        }
+      }
     }
   
     @media screen and (max-width: 480px) {
@@ -80,13 +87,14 @@
         grid-template-columns: 1fr;  // Single column for phones
       }
   
-      .skill-box {
+      .skill-box{
         padding: 15px;
-        justify-content: center;
+        display: block !important;
         img { 
-            width: 100px;
+          width: 50%;
+          height: 50%;
         }
-      }
+      }        
     }
   }
   

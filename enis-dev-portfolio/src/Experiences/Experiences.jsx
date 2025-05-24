@@ -4,6 +4,7 @@ import "../Experiences/experiences.scss";
 
 import company1Logo from "../assets/675d7085d053b8fc1be7f6ceeb7e5adf_upload-1-removebg-preview.png";
 import company2Logo from "../assets/images-removebg-preview.png";
+import company3Logo from "../assets/freelancer.jpg";
 
 const Experience = () => {
   return (
@@ -41,7 +42,20 @@ const Experience = () => {
               <h1>Starlabs LLC</h1>
             </div>
             <div className="job-dates">
-              <p>2024 - </p>
+              <p>2024 - 2025</p>
+            </div>
+          </div>
+        </div>
+         <div className="experience-row">
+          <div className="experience-item">
+            <div className="company-logo">
+              <img src={company3Logo} alt="Company 3" />
+            </div>
+            <div className="company-name">
+              <h1>Freelancer</h1>
+            </div>
+            <div className="job-dates">
+              <p>2023 - 2024</p>
             </div>
           </div>
         </div>

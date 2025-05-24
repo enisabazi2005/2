@@ -12,8 +12,8 @@ const About = () => {
         <div className="about-text">
           <h2 className="about-title">enis<span className="property">.getAbout()</span></h2>
           <p className="about-description">
-          I am an experienced software developer with nearly two years of professional experience in web development.  
-            In my free time, I contemplate my existential dread and code random projects.
+          I am an experienced software developer with nearly two years of professional experience in web development.
+          In my free time, I contemplate my existential dread and code random projects.
           </p>
           <button className="contact-button" onClick={handleContactEnis}>.contactEnis();</button>
         </div>
