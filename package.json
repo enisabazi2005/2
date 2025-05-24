@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "buildCommand": "npx vite build",
+    "outputDirectory": "dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "postinstall": "chmod +x node_modules/.bin/vite"
