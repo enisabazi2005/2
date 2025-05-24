@@ -98,7 +98,7 @@
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: #672ae9;
       position: relative;
-      top: 30px;
+      top: 10px;
       left: 0;
     }
   
@@ -113,20 +113,26 @@
   
       .projects-row {
         flex-direction: column;
-        // gap: 20px;
-        // padding: 20px;
+        padding: 20px;
+        margin: 15px auto;
+        width: 90%;
+        max-width: 500px;
       }
   
       .projects-image {
         max-width: 100%;
+        display: flex;
+        justify-content: center;
       }
   
       .projects-info {
         text-align: center;
+        padding: 20px;
+        width: 100%;
       }
   
       .projects-image img {
-        max-width: 80%;  // Reduce size for mobile
+        max-width: 80%;
         margin: 0 auto;
       }
   
@@ -143,11 +149,12 @@
   
     @media screen and (max-width: 480px) {
       .projects { 
-        padding: 50px !important;
+        padding: 30px !important;
 
         .projects-row { 
-          padding: 0 !important;
-          gap: 0 !important;
+          padding: 15px !important;
+          width: 95%;
+          margin: 10px auto;
         }
       }
       .projects-title {
