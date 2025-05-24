@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-  "build": "npx vite build",
-    "outputDirectory": "dist",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "postinstall": "chmod +x node_modules/.bin/vite"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "postinstall": "chmod +x node_modules/.bin/vite"
+},
   "dependencies": {
     "framer-motion": "^12.4.7",
     "react": "^19.0.0",
