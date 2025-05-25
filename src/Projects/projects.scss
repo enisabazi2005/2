@@ -5,7 +5,7 @@
     color: #fff;
 
     @media screen and (max-width: 768px) {
-        padding: 50px;
+        padding: 20px;
     }
   
     .projects-title {
@@ -84,7 +84,7 @@
       span { 
         color: black;
         position: relative;
-        top: 30px;
+        top: 10px;
         font-size: 15px;
         font-weight: 500;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -128,7 +128,7 @@
       .projects-info {
         text-align: center;
         padding: 20px;
-        max-width: 100%;
+        // max-width: 100%;
         margin: 0 auto;
       }
   
@@ -178,7 +178,7 @@
   
       .projects-info {
         padding: 15px;
-        width: 100%;
+        // width: 100%;
         max-width: 100%;
       }
     }
