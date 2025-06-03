@@ -28,7 +28,6 @@ const Projects = () => {
 
   return (
     <section className="projects">
-      {/* Title */}
       <motion.h2
         className="projects-title"
         initial={{ opacity: 0, scale: 3.77 }}
@@ -36,17 +35,14 @@ const Projects = () => {
         exit={{ opacity: 0, scale: 3.77 }}
         transition={{ duration: 1 }}
       >
-        Projects<span>{"::latest()->get();"}</span>
+        Projects
       </motion.h2>
 
-      {/* Projects Row */}
       <div className="projects-row">
-        {/* Left Column - Image */}
         <div className="projects-image">
           <img src={DarkVault} alt="Vaulter" />
         </div>
 
-        {/* Right Column - Text */}
         <div className="projects-info">
           <h1>Vaulter</h1>
           <p>
@@ -60,13 +56,11 @@ const Projects = () => {
           </div>
         </div>
       </div>
-        <div className="projects-row">
-        {/* Left Column - Image */}
+      <div className="projects-row">
         <div className="projects-image">
           <img src={MjekuAi} alt="Mjeku Ai" />
         </div>
 
-        {/* Right Column - Text */}
         <div className="projects-info">
           <h1>Mjeku Ai</h1>
           <p>
@@ -77,13 +71,11 @@ const Projects = () => {
           </a>
         </div>
       </div>
-        <div className="projects-row">
-        {/* Left Column - Image */}
+      <div className="projects-row">
         <div className="projects-image">
           <img src={OurTok} alt="Vaulter" />
         </div>
 
-        {/* Right Column - Text */}
         <div className="projects-info">
           <h1>OurTok</h1>
           <p>
@@ -94,13 +86,11 @@ const Projects = () => {
           </a>
         </div>
       </div>
-        <div className="projects-row">
-        {/* Left Column - Image */}
+      <div className="projects-row">
         <div className="projects-image">
           <img src={projectImage} alt="cvaio" />
         </div>
 
-        {/* Right Column - Text */}
         <div className="projects-info">
           <h1>Cvaio</h1>
           <p>
@@ -111,13 +101,11 @@ const Projects = () => {
           </span>
         </div>
       </div>
-        <div className="projects-row">
-        {/* Left Column - Image */}
+      <div className="projects-row">
         <div className="projects-image">
           <img src={Coding} alt="devpulse" />
         </div>
 
-        {/* Right Column - Text */}
         <div className="projects-info">
           <h1>Devpulse</h1>
           <p>
@@ -129,7 +117,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Image Modal */}
       <ImageModal 
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

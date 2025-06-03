@@ -1,58 +1,98 @@
 .header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    background-color: white;
-    border-bottom: 1px solid black;
+    padding: 20px 50px;
+    background: rgba(255, 252, 248, 0.98);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #2d3436;
+      background: linear-gradient(45deg, #e67e22, #d35400);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 8px 16px;
+      border: 2px solid #e67e22;
+      border-radius: 8px;
+    }
   
     .nav-list {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 40px;
       list-style: none;
       padding: 0;
       margin: 0;
-      margin-left: 65px;
   
       .nav-item {
-        color: #672ae9;
+        color: #2d3436;
         cursor: pointer;
-        margin: 0 15px;
-        font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        transition: color 0.3s ease-in-out;
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        padding: 8px 0;
+        transition: color 0.3s ease;
+  
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: linear-gradient(45deg, #e67e22, #d35400);
+          transition: width 0.3s ease;
+        }
   
         &:hover {
-          color: #8555ed;
-          transition: 0.2s ease-in;
+          color: #e67e22;
+  
+          &::after {
+            width: 100%;
+          }
         }
       }
     }
     
-    // Responsive styles
     @media screen and (max-width: 768px) {
-      flex-direction: row;
-      align-items: center;
-      padding: 15px;
+      padding: 15px 30px;
+  
+      .logo {
+        font-size: 20px;
+        padding: 6px 12px;
+      }
   
       .nav-list {
-        flex-direction: row;
-        margin-left: 0;
+        gap: 20px;
   
         .nav-item {
-          font-size: 20px;
-          margin: 10px 0;
+          font-size: 16px;
         }
       }
     }
   
     @media screen and (max-width: 480px) {
+      padding: 12px 20px;
+  
+      .logo {
+        font-size: 18px;
+        padding: 5px 10px;
+      }
+  
       .nav-list {
+        gap: 15px;
+  
         .nav-item {
-          font-size: 18px;
+          font-size: 14px;
         }
       }
     }
-  }
+}
   

@@ -4,15 +4,16 @@ import "../Header/header.scss";
 const Header = ({ onScrollToAbout, onScrollToSkills, onScrollToExperience }) => {
   return (
     <header className="header">
+      <div className="logo">EA</div>
       <ul className="nav-list">
         <li className="nav-item" onClick={onScrollToAbout}>
-          .home()
+          Home
         </li>
         <li className="nav-item" onClick={onScrollToSkills}>
-          .skills()
+          Skills
         </li>
         <li className="nav-item" onClick={onScrollToExperience}>
-          .posts()
+          Experience
         </li>
       </ul>
     </header>

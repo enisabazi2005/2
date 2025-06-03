@@ -1,100 +1,157 @@
 .skills {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #fff;
-    color: #fff;
+    padding: 100px 50px;
+    background: linear-gradient(135deg, #fff9f0 0%, #fff5eb 100%);
+    position: relative;
+    overflow: hidden;
+  
+    .skills-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   
     .skills-title {
-      font-size: 55px;
-      color: #672ae9;
-      font-family: Arial, Helvetica, sans-serif;
-      margin-bottom: 10px;
-      .property {
-        color: black;
+      font-size: 48px;
+      color: #2d3436;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      overflow: hidden !important;
+      transform: translateX(-50%);
+  
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(45deg, #e67e22, #d35400);
+        border-radius: 2px;
       }
     }
   
     .skills-description {
-      font-size: 25px;
-      margin-bottom: 40px;
-      color: #9b9b9b;
-      .property {
-        color: black;
-        font-weight: 1000;
-      }
+      font-size: 18px;
+      color: #636e72;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 60px;
+      line-height: 1.6;
     }
   
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      justify-content: center;
-      align-items: center;
-      max-width: 600px;
-      margin: auto;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0;
     }
   
     .skill-box {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      padding: 20px;
-      border-radius: 10px;
-      transition: transform 0.3s ease-in-out;
+      gap: 15px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(230, 126, 34, 0.1);
+      border: 1px solid rgba(230, 126, 34, 0.1);
+      height: 150px;
+      justify-content: center;
   
       img {
-        width: 100%;
-        height: 100%;
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+  
+      .skill-name {
+        font-size: 16px;
+        color: #2d3436;
+        font-weight: 500;
       }
   
       &:hover {
-        transform: scale(1.1);
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(230, 126, 34, 0.15);
+  
+        img {
+          transform: scale(1.1);
+        }
       }
     }
   
-    // Responsive styles
     @media screen and (max-width: 768px) {
+      padding: 80px 30px;
+  
       .skills-title {
-        font-size: 45px;
+        font-size: 40px;
       }
   
       .skills-description {
-        font-size: 20px;
+        font-size: 16px;
+        margin-bottom: 40px;
       }
   
       .skills-grid {
-        grid-template-columns: repeat(2, 1fr);  // Two columns for tablets
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 10px 0;
       }
+  
       .skill-box {
-        display: block !important;
-        img{
-          width: 50%;
-          height: 50%;
+        padding: 20px;
+        height: 130px;
+  
+        img {
+          width: 50px;
+          height: 50px;
+        }
+  
+        .skill-name {
+          font-size: 14px;
         }
       }
     }
   
     @media screen and (max-width: 480px) {
+      padding: 60px 20px;
+  
       .skills-title {
-        font-size: 35px;
+        font-size: 32px;
       }
   
       .skills-description {
-        font-size: 18px;
+        font-size: 15px;
       }
   
       .skills-grid {
-        grid-template-columns: 1fr;  // Single column for phones
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 5px 0;
       }
   
-      .skill-box{
+      .skill-box {
         padding: 15px;
-        display: block !important;
-        img { 
-          width: 50%;
-          height: 50%;
+        height: 120px;
+  
+        img {
+          width: 40px;
+          height: 40px;
         }
-      }        
+  
+        .skill-name {
+          font-size: 14px;
+        }
+      }
     }
-  }
+}
   

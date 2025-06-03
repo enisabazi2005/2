@@ -16,7 +16,7 @@ const Experience = () => {
         exit={{ opacity: 0, scale: 3.77 }}
         transition={{ duration: 1 }}
       >
-        experiences<span className="property">::after</span>
+        Experience
       </motion.h2>
 
       <motion.p

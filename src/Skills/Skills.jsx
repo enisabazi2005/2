@@ -9,46 +9,37 @@ import sqlLogo from "../assets/mysql-logo-removebg-preview.png";
 import databaseLogo from "../assets/php-logo-removebg-preview.png";
 import sass from "../assets/Sass_Logo_Color.svg-removebg-preview.png";
 
-
 const Skills = () => {
     return (
       <section className="skills">
-        {/* Title */}
-        <motion.h2
-          className="skills-title"
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.8 }}
-        >
-          <span className="property">def</span> returnSkills();
-        </motion.h2>
+        <div className="skills-content">
+          <h2 className="skills-title">My Skills</h2>
+          <p className="skills-description">
+            Highly skilled in modern web technologies and frameworks, with a focus on creating
+            responsive and user-friendly applications.
+          </p>
   
-        {/* Description */}
-        <motion.p
-          className="skills-description"
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          Highly skilled in <span className="property">HTML, CSS, SCSS, JavaScript, ReactJS, TypeScript, Laravel, Filament, MySQL</span>
-        </motion.p>
-  
-        {/* Skills Grid */}
-        <div className="skills-grid">
-          {[reactLogo, tsLogo, laravelLogo, sqlLogo, databaseLogo, sass].map((logo, index) => (
-            <motion.div
-              key={index}
-              className="skill-box"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-            >
-              <img src={logo} alt="Skill Logo" />
-            </motion.div>
-          ))}
+          <div className="skills-grid">
+            {[
+              { name: 'React', logo: reactLogo },
+              { name: 'TypeScript', logo: tsLogo },
+              { name: 'Laravel', logo: laravelLogo },
+              { name: 'MySQL', logo: sqlLogo },
+              { name: 'PHP', logo: databaseLogo },
+              { name: 'Sass', logo: sass }
+            ].map((skill, index) => (
+              <motion.div
+                key={index}
+                className="skill-box"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <img src={skill.logo} alt={skill.name} />
+                <span className="skill-name">{skill.name}</span>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     );
