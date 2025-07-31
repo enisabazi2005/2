@@ -1,11 +1,12 @@
 import React from "react";
 import "../About/about.scss";
-import profileImage from  "../assets/enis-removebg-preview.png";
+import profileImage from  "../assets/enisIMAGE-removebg-preview.png";
 
 const About = () => {
     const handleContactEnis = () => { 
         window.location.href = 'https://www.linkedin.com/in/enis-abazi-9a7097241/';
     };
+    
     return (
       <section className="about">
         <div className="about-content">
@@ -24,7 +25,12 @@ const About = () => {
     
           {/* Right Column */}
           <div className="about-image">
-            <img src={profileImage} alt="Enis" />
+            <div className="image-container">
+              <img src={profileImage} alt="Enis" />
+              <div className="decoration-1"></div>
+              <div className="decoration-2"></div>
+              <div className="decoration-3"></div>
+            </div>
           </div>
         </div>
       </section>
