@@ -3,6 +3,7 @@
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   color: #212529;
   text-align: center;
+  overflow-x: hidden; 
 
   &-title {
     font-size: 3.5rem;
@@ -14,6 +15,10 @@
     }
   }
 
+  .projects-grid { 
+    overflow: hidden !important;
+  }
+
   &-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -21,6 +26,8 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
+    width: 100%; // Ensure it takes full width
+    box-sizing: border-box; // Include padding in width calculation
   }
 
   .project-card {
@@ -132,14 +139,17 @@
   }
 
   @media (max-width: 768px) {
-    padding: 3rem 1rem;
-
-    &-title {
-      font-size: 2.5rem;
-    }
-
-    &-grid {
-      grid-template-columns: 1fr;
+    @media (max-width: 768px) {
+      padding: 3rem 1rem;
+  
+      &-title {
+        font-size: 2.5rem;
+      }
+  
+      &-grid {
+        grid-template-columns: 1fr;
+        padding: 0; // Remove padding on mobile if needed
+      }
     }
   }
 
